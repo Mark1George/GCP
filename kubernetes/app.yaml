@@ -15,8 +15,6 @@ spec:
       containers:
       - name: my-apps
         image: us-docker.pkg.dev/heroic-tide-348508/terra/test:latest
-        ports:
-        - containerPort: 80
         envFrom:
         - configMapRef:
             name: my-app-cm
